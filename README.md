@@ -1,2 +1,9 @@
-# uvv_bd1_si1n
-Repositório para armazenar os arquivos do pset1
+#### Trabalho para a faculdade de Banco de Dados, PSET 1.
+
+## Sobre:
+
+# Nome completo: Wendel Junio Souza da Penha.
+# Matrícula: 202306113.
+# Turma: si1n.
+# Email: wendeljuniosouza@gmail.com.
+
