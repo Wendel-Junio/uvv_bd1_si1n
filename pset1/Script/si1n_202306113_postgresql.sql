@@ -4,15 +4,20 @@ DROP database IF EXISTS uvv;
 CREATE USER wendel_j WITH PASSWORD '1002986';
 
 CREATE DATABASE uvv
-OWNER wendel_j; 
+OWNER wendel_j
+TEMPLATE template0
+ENCODING 'UTF8'
+LC_COLLATE 'pt_BR.UTF-8'
+LC_CTYPE 'pt_BR.UTF-8'
+CONNECTION LIMIT -1; 
 
 GRANT ALL PRIVILEGES ON DATABASE uvv TO wendel_j; 
-
-\c "dbname=uvv user=wendel_j password=1002986"
 
 CREATE SCHEMA lojas AUTHORIZATION wendel_j; 
 
 SET SEARCH_PATH TO lojas, "$user", public;
+
+\c "dbname=uvv user=wendel_j password=1002986"
 
 CREATE TABLE produtos (
                 produto_id NUMERIC(38) 	NOT NULL,
