@@ -48,7 +48,7 @@ CONSTRAINT produto_id PRIMARY KEY (produto_id)
 );
 
 -- Criação dos comandos para os comentários da tabela produtos.
-COMMENT ON TABLE  produtos IS 'Criação da tabela produtos.';
+COMMENT ON TABLE  produtos IS 'tabela produtos.';
 COMMENT ON COLUMN produtos.produto_id IS 'Coluna da chave primária da tabela produtos "produto_id", contendo o ID dos produtos.';
 COMMENT ON COLUMN produtos.nome IS 'Coluna com o nome dos produtos.';
 COMMENT ON COLUMN produtos.preco_unitario IS 'Coluna com o preço de cada produto.';
@@ -76,7 +76,7 @@ CONSTRAINT loja_id PRIMARY KEY (loja_id)
 );
 
 -- Criação dos comandos para os comentários da tabela lojas.
-COMMENT ON TABLE  lojas IS 'Criação da tabela lojas.';
+COMMENT ON TABLE  lojas IS 'tabela lojas.';
 COMMENT ON COLUMN lojas.loja_id IS 'Coluna da chave primária da tabela lojas "loja_id", contendo o ID das lojas.';
 COMMENT ON COLUMN lojas.nome IS 'Coluna com o nome de cada loja.';
 COMMENT ON COLUMN lojas.endereco_web IS 'Coluna com o link do site das lojas.';
@@ -99,7 +99,7 @@ CONSTRAINT estoque_id PRIMARY KEY (estoque_id)
 );
 
 -- Criação dos comandos para os comentários da tabela estoques.
-COMMENT ON TABLE  estoques IS 'Criação da tabela estoques.';
+COMMENT ON TABLE  estoques IS 'tabela estoques.';
 COMMENT ON COLUMN estoques.estoque_id IS 'Coluna da chave primária da tabela estoques "estoque_id", contendo o ID dos estoques.';
 COMMENT ON COLUMN estoques.loja_id IS 'Coluna da chave estrangeira da tabela estoques "loja_id", contendo o ID das lojas.';
 COMMENT ON COLUMN estoques.produto_id IS 'Coluna da chave estrangeira da tabela estoques "produto_id", contendo o ID dos produtos.';
@@ -117,7 +117,7 @@ CONSTRAINT cliente_id PRIMARY KEY (cliente_id)
 );
 
 -- Criação dos comandos para os comentários da tabela clientes.
-COMMENT ON TABLE clientes IS 'Criação da tabela clientes.';
+COMMENT ON TABLE clientes IS 'tabela clientes.';
 COMMENT ON COLUMN clientes.cliente_id IS 'Coluna da chave primária da tabela clientes "cliente_id", contendo o ID dos clientes.';
 COMMENT ON COLUMN clientes.email IS 'coluna com o email dos clientes.';
 COMMENT ON COLUMN clientes.nome IS 'Coluna com o nome dos clientes.';
@@ -136,7 +136,7 @@ CONSTRAINT envio_id PRIMARY KEY (envio_id)
 );
 
 -- Criação dos comandos para os comentários da tabela envios.
-COMMENT ON TABLE envios IS 'Criação da tabela envios.';
+COMMENT ON TABLE envios IS 'tabela envios.';
 COMMENT ON COLUMN envios.envio_id IS 'Coluna da chave primária da tabela envios "envio_id", contendo o ID dos envios.';
 COMMENT ON COLUMN envios.loja_id IS 'Coluna da chave estrangeira da tabela envios "loja_id", contendo o ID das lojas.';
 COMMENT ON COLUMN envios.cliente_id IS 'Coluna da chave estrangeira da tabela envios "cliente_id", contendo o ID dos clientes.';
@@ -154,7 +154,7 @@ CONSTRAINT pedido_id PRIMARY KEY (pedido_id)
 );
 
 -- Criação dos comandos para os comentários da tabela pedidos.
-COMMENT ON TABLE  pedidos IS 'Criação da tabela pedidos.';
+COMMENT ON TABLE  pedidos IS 'tabela pedidos.';
 COMMENT ON COLUMN pedidos.pedido_id IS 'Coluna da chave primária da tabela pedidos "pedido_id", contendo o ID dos pedidos.';
 COMMENT ON COLUMN pedidos.data_hora IS 'Coluna com a data e a hora de cada pedido.';
 COMMENT ON COLUMN pedidos.cliente_id IS 'Coluna da chave estrangeira da tabela pedidos "cliente_id", contendo o ID dos clientes.';
