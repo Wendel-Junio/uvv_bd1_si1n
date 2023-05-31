@@ -173,7 +173,7 @@ CONSTRAINT pedido_id_produto_id PRIMARY KEY (pedido_id, produto_id)
 );
 
 -- Criação dos comandos para os comentários da tabela pedidos_itens.
-COMMENT ON TABLE pedidos_itens IS 'Criação da tabela relacional entre pedidos e produtos.';
+COMMENT ON TABLE pedidos_itens IS 'tabela relacional entre pedidos e produtos.';
 COMMENT ON COLUMN pedidos_itens.pedido_id IS 'Coluna da chave primária estrangeira da tabela pedidos_itens "pedido_id", contendo o ID dos pedidos.';
 COMMENT ON COLUMN pedidos_itens.produto_id IS 'Coluna da chave primária estrangeira da tabela pedidos_itens "produto_id", contendo o ID dos produtos.';
 COMMENT ON COLUMN pedidos_itens.preco_unitario IS 'Coluna com o preço de cada pedido.';
