@@ -1,13 +1,12 @@
 -- Comando para excluir o usuário se existir.
-DROP ROLE IF EXISTS wendel_j;
--- Comando para excluir o usuário se existir.
 DROP database IF EXISTS uvv;
+
+-- Comando para excluir o usuário se existir.
+DROP ROLE IF EXISTS wendel_j;
 
 -- Criação do usuário.
 CREATE USER wendel_j 
-WITH ENCRYPTED PASSWORD '1002986'
-CREATEDB
-CREATEROLE;
+WITH ENCRYPTED PASSWORD '123';
 
 -- Criando o banco de dados uvv.
 CREATE DATABASE uvv
@@ -16,24 +15,21 @@ TEMPLATE template0
 ENCODING 'UTF8'
 LC_COLLATE 'pt_BR.UTF-8'
 LC_CTYPE 'pt_BR.UTF-8'
-allow_connections: true; 
+allow_connections true; 
 
 -- Dando os privilégios do banco de dados para o usuário.
 GRANT ALL PRIVILEGES ON DATABASE uvv TO wendel_j; 
 
--- Criando o schema e dando a autorização para o usuário.
-CREATE SCHEMA lojas AUTHORIZATION wendel_j; 
-
 -- Comando para conectar ao banco de dados (UVV) com o usuário wendel_j
 \c "dbname=uvv user=wendel_j password=1002986"
 
--- Comando para setar o caminho para lojas.
-SET SEARCH_PATH TO lojas, "$user", public;
+-- Criando o schema e dando a autorização para o usuário.
+CREATE SCHEMA lojas AUTHORIZATION wendel_j; 
 
 -- Comando para mostrar o path que está sendo usado.
 SHOW SEARCH_PATH;
 
---
+-- Comando para setar o caminho para lojas.
 ALTER USER wendel_j
 SET SEARCH_PATH TO lojas, "$user", public;
 
