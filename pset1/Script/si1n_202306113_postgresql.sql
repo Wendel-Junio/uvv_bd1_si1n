@@ -6,7 +6,7 @@ DROP ROLE IF EXISTS wendel_j;
 
 -- Criação do usuário.
 CREATE USER wendel_j 
-WITH ENCRYPTED PASSWORD '100298';
+WITH ENCRYPTED PASSWORD '1002986';
 
 -- Criando o banco de dados uvv.
 CREATE DATABASE uvv
