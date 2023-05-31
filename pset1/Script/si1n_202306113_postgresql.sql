@@ -26,6 +26,9 @@ GRANT ALL PRIVILEGES ON DATABASE uvv TO wendel_j;
 -- Criando o schema e dando a autorização para o usuário.
 CREATE SCHEMA lojas AUTHORIZATION wendel_j; 
 
+-- comando para habilitar o path para o schema (lojas).
+SET SEARCH_PATH TO lojas, "$user", public;
+
 -- Comando para mostrar o path que está sendo usado.
 SHOW SEARCH_PATH;
 
